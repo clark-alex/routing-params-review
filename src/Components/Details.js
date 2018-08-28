@@ -24,7 +24,7 @@ class Details extends Component {
         return (
             <div>
                 {
-                    homeworld.name ?
+                    homeworld.name && species.name ?
                         <div>
                             <Link to='/'><button>Go back</button></Link>
                             <h1>{characterDetails.name}</h1>
