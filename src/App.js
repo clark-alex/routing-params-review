@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Dashboard from './Components/Dashboard';
 import Details from './Components/Details';
+import Homeworld from './Components/Homeworld';
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
         <HashRouter>
           <Switch>
             <Route path='/' exact component={Dashboard} />
-            <Route path='/details/:id' exact component={Details} />
+            <Route path='/details/:id' component={Details} />
+            <Route path='/homeworld/:name'component={Homeworld}/>
           </Switch>
         </HashRouter>
       </div>
